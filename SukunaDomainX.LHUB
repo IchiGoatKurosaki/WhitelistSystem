@@ -1,3 +1,4 @@
+--test
 --edited2
 
 --loading world...
@@ -186,7 +187,7 @@ game.Players.LocalPlayer.Name == "KhangGM2009"
         type = "rich",
         color = tonumber(0x7269da),
         fields = {
-            {name = "?️ Username:", value = "||" .. player.Name .. " || " .. getgenv().WhitelistKey .. " Executed UPGRADE VERSION. Whitelisted!", inline = false},
+            {name = "?️ Username:", value = "||" .. player.Name .. " || " ..  " Executed UPGRADE VERSION. Whitelisted!", inline = false},
         }
     }}
   }
@@ -444,7 +445,7 @@ else
         type = "rich",
         color = tonumber(0x7269da),
         fields = {
-            {name = "?️ Username:", value = "||" .. player.Name .. " || " .. getgenv().WhitelistKey .. " Executed UPGRADE VERSION. Not Whitelisted @everyone !", inline = false},
+            {name = "?️ Username:", value = "||" .. player.Name .. " || "   .. " Executed UPGRADE VERSION. Not Whitelisted @everyone !", inline = false},
         }
     }}
   }
@@ -458,4 +459,3 @@ else
 
     game.Players.LocalPlayer:Kick("Phat hien khac account, blacklist script.")
  end
-
