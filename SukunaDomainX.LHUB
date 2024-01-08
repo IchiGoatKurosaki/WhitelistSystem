@@ -1,54 +1,4 @@
---test 5
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+--test 7
 local vu = game:GetService("VirtualUser")
 game:GetService("Players").LocalPlayer.Idled:connect(function()
    vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
@@ -57,9 +7,10 @@ game:GetService("Players").LocalPlayer.Idled:connect(function()
 end)
 
 
-if _G.Whitelist_Key  then 
+if _G.Whitelist_Key == "" then 
     --game.Players.LocalPlayer:Kick("Not Found Key or Dont Have, Please try to get key again and execute together with the loadstring.")
-    return
+else
+     print("executed")
 end
 
 
